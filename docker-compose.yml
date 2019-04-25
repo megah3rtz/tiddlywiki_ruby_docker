@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+
+  tiddlywiki:
+    build:
+      context: ./
+    volumes:
+    - ./empty.html:/tiddlyserver/empty.html:rw
+    ports:
+    - "8000:8000"
