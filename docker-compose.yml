@@ -6,6 +6,6 @@ services:
     build:
       context: ./
     volumes:
-    - ./empty.html:/tiddlyserver/empty.html:rw
+    - ./empty.html:/tiddlyserver/empty.html:Z
     ports:
     - "8000:8000"
